@@ -38,11 +38,10 @@ const Banner = () => {
                 <div
                     className="w-[70vw] md:w-[50vw] lg:w-[50vw] mx-auto h-[18vh] md:h-[19vh] lg:h-[35vh] xl:h-[40vh] 2xl:h-[47vh] relative flex justify-between"
                 >
-                    //dfdfdf
 
                     <Image
                         src={bannerImage} alt="rjannat"
-                        className="mx-auto absolute -bottom-[5%] md:-bottom-[7%]    transform-translate-x-1/2 w-full"
+                        className="mx-auto absolute -bottom-[5%] md:-bottom-[15%]    transform-translate-x-1/2 w-full"
                         data-aos="fade-up"
                         data-aos-duration="1000"
                     />
