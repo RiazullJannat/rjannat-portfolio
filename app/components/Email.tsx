@@ -1,11 +1,14 @@
 'use client'
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const Email = () => {
     const form = useRef<HTMLFormElement>(null);
+    const [isSending, setIsSending] = useState(false);
+
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setIsSending(true);
 
         emailjs
             .sendForm(
@@ -17,47 +20,59 @@ const Email = () => {
             .then(
                 (result) => {
                     console.log("Success:", result.text);
-                    alert("Email sent successfully!");
+                    alert("Message sent successfully! I'll get back to you soon.");
+                    setIsSending(false);
                 },
                 (error) => {
                     console.log("Error:", error.text);
-                    alert("Failed to send email.");
+                    alert("Failed to send email. Please try again later.");
+                    setIsSending(false);
                 }
             );
 
         (e.target as HTMLFormElement).reset(); 
     };
+
     return (
-        <div className="flex justify-center">
-            <form ref={form} onSubmit={sendEmail} className=" flex flex-col gap-4 p-4 border rounded-lg w-full md:w-1/2 ">
+        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-6 w-full">
+            <div className="flex flex-col gap-2">
+                <label className="text-sm font-semibold text-gray-300 ml-1">Your Name</label>
                 <input
                     type="text"
                     name="from_name"
-                    placeholder="Your Name"
-                    className="border p-2 rounded bg-root text-white placeholder:text-white"
+                    placeholder="John Doe"
+                    className="w-full bg-black/60 border border-white/20 rounded-xl p-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-all duration-300"
                     required
                 />
+            </div>
+            <div className="flex flex-col gap-2">
+                <label className="text-sm font-semibold text-gray-300 ml-1">Your Email</label>
                 <input
                     type="email"
                     name="user_email"
-                    placeholder="Your Email"
-                    className="border p-2 rounded bg-root text-white placeholder:text-white"
+                    placeholder="john@example.com"
+                    className="w-full bg-black/60 border border-white/20 rounded-xl p-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-all duration-300"
                     required
                 />
+            </div>
+            <div className="flex flex-col gap-2">
+                <label className="text-sm font-semibold text-gray-300 ml-1">Your Message</label>
                 <textarea
                     name="message"
-                    placeholder="Your Message"
-                    className="border p-2 rounded bg-root text-white placeholder:text-white"
+                    placeholder="Let's work together..."
+                    rows={4}
+                    className="w-full bg-black/60 border border-white/20 rounded-xl p-4 text-white placeholder:text-gray-500 focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-all duration-300 resize-none"
                     required
                 />
-                <button
-                    type="submit"
-                    className="bg-h_text text-white p-2 rounded hover:bg-root"
-                >
-                    Send Email
-                </button>
-            </form>
-        </div>
+            </div>
+            <button
+                type="submit"
+                disabled={isSending}
+                className="group relative w-full flex justify-center items-center gap-2 bg-white text-black font-bold text-lg py-4 rounded-xl hover:bg-gray-200 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all duration-300 disabled:opacity-70 mt-2"
+            >
+                {isSending ? "Sending..." : "Send Message"}
+            </button>
+        </form>
     );
 };
 

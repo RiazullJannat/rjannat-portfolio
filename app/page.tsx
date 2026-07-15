@@ -4,14 +4,17 @@ import Skill from "./components/SkillSection";
 import Project from "./components/ProjectSection";
 import Contact from "./components/ContactSection";
 
+import ExperienceSection from "./components/ExperienceSection";
+
 export default function Home() {
   return (
     <div>
       <Banner></Banner>
       <About></About>
       <Skill></Skill>
+      <ExperienceSection />
       <Project></Project>
-      {/* <Contact></Contact> */}
+      <Contact></Contact>
     </div>
   );
 }

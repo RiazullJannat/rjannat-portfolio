@@ -163,5 +163,29 @@ const projects = [
         "icon": '/projects/language-club-logo.jpeg',
         "link": 'https://language-club-b10ab.web.app/'
     }
-]
-export { technologies, projects };
+];
+
+const experiences = [
+    {
+        id: 1,
+        company: "Mastery Corporation",
+        role: "MERN Stack Developer",
+        duration: "Nov 2025 - Present · 9 mos",
+        location: "Jashore, Bangladesh · On-site",
+        description: "My role is MERN stack developer, and I am also involved in system design.",
+        skills: ["Next.js", "MERN Stack"],
+        logo: "/tech/reactjs.png" // Placeholder logo
+    },
+    {
+        id: 2,
+        company: "Exprovia",
+        role: "Web Application Developer · Internship",
+        duration: "Apr 2025 - Jul 2025 · 4 mos",
+        location: "Khulna, Bangladesh · On-site",
+        description: "Worked as a web application developer intern focusing on WordPress and Elementor.",
+        skills: ["Elementor", "WordPress"],
+        logo: "/tech/javascript.png" // Placeholder logo
+    }
+];
+
+export { technologies, projects, experiences };
