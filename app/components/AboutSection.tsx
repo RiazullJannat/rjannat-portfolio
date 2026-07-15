@@ -9,7 +9,7 @@ const About = () => {
         <section className={`${styles.sectionBg} pl-1  max-h-[95vh] flex relative mt-10 overflow-hidden`} id="about">
             <div className="md:px-10 ">
                 <div className="">
-                    <h1 className="font-extenda text-[21vw] md:text-[27vw] lg:text-[20.6vw] xl:text-[10vw] 2xl:text-[21vw]  leading-[0.5] flex p-0 z-20 absolute top-[13%]" data-aos="fade-down" data-aos-duration="1000">RIAZULL JANNAT</h1>
+                    <h1 className="font-extenda text-[21vw] md:text-[27vw] lg:text-[20.6vw] xl:text-[20vw] 2xl:text-[21vw]  leading-[0.5] flex p-0 z-20 absolute top-[13%]" data-aos="fade-down" data-aos-duration="1000">RIAZULL JANNAT</h1>
                 </div>
                 <div className="flex mt-10 items-center md:items-end  h-full ">
                     <div className=" lg:mb-20 w-full">

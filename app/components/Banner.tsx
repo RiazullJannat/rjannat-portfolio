@@ -14,22 +14,22 @@ const Banner = () => {
     return (
         <section id="home" className={`${styles.sectionBg} p-1 overflow-hidden lg:px-8  mx-auto`}>
             <div className="relative  mx-auto ">
-                <div className="mb-8 mt-4 flex justify-between items-center">
+                <div className="mb-8 mt-4 flex justify-between items-center z-50">
                     <div className="text-[3vw] font-black" data-aos="fade-right" data-aos-duration="600">PROGRAMMER</div>
                     <div className="flex justify-center items-center gap-3" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                        <Link href={'https://www.linkedin.com/in/riazull-jannat/'} target="_blnck" className="md:text-4xl text-blue-700">
+                        <Link  href={'https://www.linkedin.com/in/riazull-jannat/'} target="_blnck" className="md:text-4xl text-blue-700 cursor-pointer">
                             <FaLinkedin />
                         </Link>
-                        <Link href={'https://github.com/RiazullJannat'} target="_blnck" className="md:text-4xl">
+                        <Link href={'https://github.com/RiazullJannat'} target="_blnck" className="md:text-4xl cursor-pointer">
                             <FaGithub />
                         </Link>
-                        <Link href={'https://mybdjobs.bdjobs.com/mybdjobs/masterview.asp'} target="_blnck">
+                        <Link href={'https://mybdjobs.bdjobs.com/mybdjobs/masterview.asp'} target="_blnck" className="cursor-pointer">
                             <img src={'https://play-lh.googleusercontent.com/uVZQl-dRvg7rMWp8EhmLQa-avQx5erJgQ5Mu6mac2du4lOpV-35Qifv63fltE-uEqjw'} alt="bd jobs" className="h-4 md:h-10 rounded-full" />
                         </Link>
                     </div>
                 </div>
                 <h1
-                    className="font-extenda text-[27vw] md:text-[27vw] md:mt-14 lg:text-[25.6vw] xl:text-[26vw] 2xl:text-[26.8vw] leading-[0.5] text-center sm:mt-24 lg:mt-24 relative p-0"
+                    className="font-extenda text-[27vw] md:text-[27vw] md:mt-14 lg:text-[25.6vw] xl:text-[26vw] 2xl:text-[26.8vw] leading-[0.5] text-center sm:mt-24 lg:mt-30 relative p-0"
                     data-aos="zoom-in"
                     data-aos-duration="700"
                 >
