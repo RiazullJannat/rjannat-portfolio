@@ -31,7 +31,7 @@ const NavBar = () => {
 
         return () => observer.disconnect();
     }, []);
-    const menus = ['home', 'about', 'skills', 'projects', 'contact']
+    const menus = ['home', 'about', 'skills', 'experience', 'projects', 'contact'];
     const routs =
         <>
             {
@@ -55,7 +55,7 @@ const NavBar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-black bg-opacity-50 backdrop-blur-sm rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                        className="menu menu-sm dropdown-content bg-black/40 border border-white/10 backdrop-blur-lg rounded-box z-[1] mt-3 w-52 p-2 shadow-xl ">
                         {routs}
                     </ul>
                 </div>

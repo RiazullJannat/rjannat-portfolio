@@ -28,7 +28,7 @@ const ExperienceSection = () => {
                             className="relative pl-8 md:pl-12"
                         >
                             {/* Timeline Dot */}
-                            <div className="absolute w-6 h-6 bg-[#0a0a0a] border-4 border-blue-500 rounded-full -left-[13px] top-2 shadow-[0_0_15px_rgba(59,130,246,0.8)]" />
+                            <div className="absolute w-6 h-6 bg-[#0a0a0a] border-4 border-white rounded-full -left-[13px] top-2 shadow-[0_0_15px_rgba(255,255,255,0.8)]" />
 
                             <div className="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md p-6 md:p-8 hover:bg-white/10 transition-colors duration-500 shadow-2xl">
                                 <div className="relative z-10 flex flex-col md:flex-row md:justify-between md:items-start gap-4">
@@ -36,7 +36,7 @@ const ExperienceSection = () => {
                                         <h4 className="text-2xl md:text-3xl font-bold text-white mb-1">
                                             {exp.role}
                                         </h4>
-                                        <div className="text-lg text-blue-300 font-semibold mb-2">
+                                        <div className="text-lg text-gray-300 font-semibold mb-2">
                                             {exp.company}
                                         </div>
                                         <div className="text-sm text-gray-400 flex flex-col sm:flex-row sm:gap-4 mb-4">
