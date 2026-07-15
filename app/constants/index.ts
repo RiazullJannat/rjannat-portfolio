@@ -74,6 +74,66 @@ const technologies = [
         name: "Linux",
         icon: "/tech/linux.png",
     },
+    {
+        name: "TypeScript",
+        icon: "/tech/Typescript_logo.svg",
+    },
+    {
+        name: "C",
+        icon: "/tech/C_Programming_Language.svg",
+    },
+    {
+        name: "C++",
+        icon: "/tech/cpp-image.png",
+    },
+    {
+        name: "Django",
+        icon: "/tech/django.png",
+    },
+    {
+        name: "Docker",
+        icon: "/tech/docker.png",
+    },
+    {
+        name: "PostgreSQL",
+        icon: "/tech/postgresql.png",
+    },
+    {
+        name: "SQLite",
+        icon: "/tech/sqlite.png",
+    },
+    {
+        name: "NumPy",
+        icon: "/tech/numpy.png",
+    },
+    {
+        name: "Pandas",
+        icon: "/tech/pandas_white.svg",
+    },
+    {
+        name: "Matplotlib",
+        icon: "/tech/matplotlib.png",
+    },
+    {
+        name: "Scikit-Learn",
+        icon: "/tech/sklearn.png",
+    },
+    {
+        name: "JWT",
+        icon: "/tech/jwt.png",
+    },
+    {
+        name: "Postman",
+        icon: "/tech/postman.png",
+    },
+    {
+        name: "Claude",
+        icon: "/tech/claude.png",
+    },
+    {
+        name: "Discord",
+        icon: "/tech/discord.png",
+    }
 ];
 const projects = [
     {
