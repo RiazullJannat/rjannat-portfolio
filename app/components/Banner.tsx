@@ -5,6 +5,7 @@ import bannerImage from "../../public/assets/banner-image.png";
 import { Luckiest_Guy } from "next/font/google";
 import Link from "next/link";
 import TypingText from "./TypingText";
+import { SiCodechef } from "react-icons/si";
 
 const luckiestGuy = Luckiest_Guy({
     weight: "400",
@@ -17,14 +18,14 @@ const Banner = () => {
                 <div className="mb-8 mt-4 flex justify-between items-center z-50">
                     <div className="text-[3vw] font-black" data-aos="fade-right" data-aos-duration="600">PROGRAMMER</div>
                     <div className="flex justify-center items-center gap-3" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                        <Link  href={'https://www.linkedin.com/in/riazull-jannat/'} target="_blnck" className="md:text-4xl text-blue-700 cursor-pointer">
+                        <Link href={'https://www.linkedin.com/in/riazull-jannat/'} target="_blnck" className="md:text-4xl cursor-pointer">
                             <FaLinkedin />
                         </Link>
                         <Link href={'https://github.com/RiazullJannat'} target="_blnck" className="md:text-4xl cursor-pointer">
                             <FaGithub />
                         </Link>
-                        <Link href={'https://mybdjobs.bdjobs.com/mybdjobs/masterview.asp'} target="_blnck" className="cursor-pointer">
-                            <img src={'https://play-lh.googleusercontent.com/uVZQl-dRvg7rMWp8EhmLQa-avQx5erJgQ5Mu6mac2du4lOpV-35Qifv63fltE-uEqjw'} alt="bd jobs" className="h-4 md:h-10 rounded-full" />
+                        <Link href={'https://www.codechef.com/users/venue_glide_58'} target="_blnck" className="cursor-pointer">
+                            <SiCodechef className="md:text-4xl " />
                         </Link>
                     </div>
                 </div>
