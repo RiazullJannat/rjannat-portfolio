@@ -1,6 +1,6 @@
 import parcelLogicBanner from '../../public/projects/parcelLogic.png'
 import languageClubBanner from '../../public/projects/languageClub.png'
-import equiStoreBanner from '../../public/projects/equiStore.png'
+import optiLuxBanner from '../../public/projects/optilux-cdm.png'
 const technologies = [
     {
         name: "HTML 5",
@@ -138,21 +138,21 @@ const technologies = [
 const projects = [
     {
         "id": 1,
+        "title": "Optilux CDM",
+        "subtitle": "A multi tenant Customer Data Management System",
+        "description": "Optilux CDM is a comprehensive customer data management system designed for businesses to efficiently manage their customer information. It provides a centralized platform for storing, organizing, and analyzing customer data, enabling businesses to gain valuable insights and improve their customer relationships. The system is built with a user-friendly interface and offers a range of features to streamline customer data management processes.",
+        "image": optiLuxBanner,
+        "icon": '/projects/equi-store-logo.jpeg',
+        "link": 'https://demo.nahidbusinessacademy.com/login'
+    },
+    {
+        "id": 2,
         "title": "Parcel Logic",
         "subtitle": "A Delivery Management System",
         "description": "Parcel Logic simplifies delivery tracking with real-time updates, secure payments, and automated notifications, making logistics more efficient for businesses and individuals.",
         "image": parcelLogicBanner,
         "icon": '/projects/parcel-logic-logo.jpeg',
         "link": 'https://parcel-logic.web.app/'
-    },
-    {
-        "id": 2,
-        "title": "Equi Store",
-        "subtitle": "An E-commerce Platform",
-        "description": "Equi Store streamlines online shopping with Firebase authentication, real-time data storage, and engaging UI elements like animations and interactive effects for a seamless user experience.",
-        "image": equiStoreBanner,
-        "icon": '/projects/equi-store-logo.jpeg',
-        "link": 'https://assignment-10-d1cd0.web.app/'
     },
     {
         "id": 3,

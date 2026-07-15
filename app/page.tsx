@@ -10,7 +10,7 @@ export default function Home() {
       <Banner></Banner>
       <About></About>
       <Skill></Skill>
-      {/* <Project></Project> */}
+      <Project></Project>
       {/* <Contact></Contact> */}
     </div>
   );
